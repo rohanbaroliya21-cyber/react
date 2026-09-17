@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,124 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body{
+  background-image: url(fullback.png);
+
 }
+.Navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+ /* logo*/
+.logo img{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+/*Navigation links */
+.links{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.links a:hover {
+  color: rgb(0, 13, 255);
+   
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
+
+#home{
+  min-height: 90vh;
+  padding: 60px 40px;
+  background-image: url(fullback.png);
+  background-position: center;
+
+
+}
+
+.home-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: auto;
+
+}
+.home-text{
+  max-width: 550px;
+
+}
+.home-text h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+
+}
+.home-text h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+
+}
+
+.home-text p{
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.home-text button{
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size:16px ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.home-text button:hover{
+  background-color: blue;
+
+
+}
+
+.home-image img{
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
+
